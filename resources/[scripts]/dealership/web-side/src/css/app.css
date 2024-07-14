@@ -1,0 +1,480 @@
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 858px;
+  height: 470px;
+  border-radius: 5px;
+  transform: translate(-50%,-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+main::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 5px;
+  background: linear-gradient(180deg, rgba(127, 38, 193, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+main header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+}
+
+main header .welcome {
+  display: flex;
+  align-items: center;
+}
+
+main header .welcome .user-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  color: #fff;
+  font-size: 20px;
+  margin-right: 20px;
+  align-items: center;
+  border-radius: 100%;
+  justify-content: center;
+  background: rgb(127, 38, 193);
+  border: 2px solid rgba(0, 0, 0, 0.34);
+}
+
+main header .welcome .user-info {
+  display: flex;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 20px;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+main header .welcome .user-info small {
+  opacity: .5;
+  font-size: 8px;
+  margin-top: 2px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+b {
+  color: rgb(127, 38, 193);
+}
+
+main header .column-item {
+  position: relative;
+  width: 150px;
+  height: 38px;
+  margin: 0 5px;
+  color: #fff;
+  display: flex;
+  padding: 0 15px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+main header .column-item p {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+main header .column-item p small {
+  opacity: .5;
+  font-size: 7px;
+  letter-spacing: 0.7px;
+}
+
+main header .column-item p span {
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+main header .column-item input {
+  margin-left: 12px;
+  width: 100px;
+  z-index: 101;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+main header .column-item input::placeholder {
+  position: relative;
+  top: -1px;
+  left: 5px;
+  font-size: 10px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.12);
+}
+
+main header .column-item .options {
+  position: absolute;
+  left: 0px;
+  top: 40px;
+  width: 100%;
+  z-index: 101;
+}
+
+main header .column-item .options .option {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 10px 10px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  letter-spacing: .5px;
+  transition: all .2s;
+  text-transform: uppercase;
+  background-color: #111;
+  cursor: pointer;
+}
+
+.btn-mark {
+  background-color: rgba(127, 38, 193, 0.48) !important;
+}
+
+main header .priceFilter {
+  padding: 0 20px;
+  transition: all .2s;
+}
+
+main header .priceFilter:hover {background-color: rgba(0, 0, 0, 0.2);}
+
+main section {
+  width: 98%;
+  display: grid;
+  grid-gap: 10px;
+  overflow: hidden;
+  max-height: 330px;
+  padding: 0px 25px;
+  overflow-x: hidden;
+  grid-template-columns: repeat(5, 155px);
+}
+
+main section .item {
+  position: relative;
+  width: 155px;
+  height: 155px;
+  display: flex;
+  padding: 10px;
+  font-size: 10px;
+  border-radius: 5px;
+  flex-direction: column;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+main section .item .title {
+  position: relative;
+  display: flex;
+  color: #fff;
+  margin-left: 10px;
+  padding-left: 10px;
+  flex-direction: column;
+}
+
+main section .item img {
+  height: 60px;
+  margin: 5px auto;
+}
+
+main section .item button {
+  height: 30px;
+  color: #fff;
+  font-size: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background: rgba(127, 38, 193, 0.877)
+}
+
+main section .item .title small {
+  opacity: .5;
+  letter-spacing: 1px;
+}
+
+main section .item .title span {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+main section .item .title::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  background-color:rgb(127, 38, 193);
+  transform: translate(0,-50%);
+}
+
+main aside {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 280px;
+  height: 97%;
+  z-index: 101;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  border-radius: 5px;
+  flex-direction: column;
+  transform: translate(0,-50%);
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+main aside .banner {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  color: #fff;
+  display: flex;
+  padding: 15px;
+  margin-bottom: 40px;
+  align-items: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  border-radius: 3px 3px 0 0;
+  background-color: rgb(127, 38, 193)
+}
+
+main aside .banner span {
+  font-weight: 600;
+}
+
+main aside .banner small {
+  opacity: .5;
+  font-size: 10px;
+  letter-spacing: .5px;
+}
+
+main aside .banner #overlay {
+  max-width: 250px;
+  position: relative;
+  top: -50px;
+  opacity: .1;
+  filter: grayscale(100%);
+}
+
+main aside .banner #car {
+  position: absolute;
+  left: 50%;
+  bottom: -50px;
+  max-width: 210px;
+  transform: translate(-50%,0);
+}
+
+main aside p {
+  color: #fff;
+  opacity: .5;
+  font-size: 11px;
+  margin-top: 40px;
+  margin: 20px 20px;
+  text-align: center;
+  letter-spacing: .5px;
+}
+
+main aside .row-info {
+  width: 80%;
+  color: #fff;
+  display: flex;
+  font-size: 10px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  justify-content: space-between;
+}
+
+main aside .btns {
+  display: grid;
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+
+main aside .btns .time-info {
+  width: 100%;
+  display: flex;
+  color: #fff;
+  opacity: .7;
+  font-size: 12px;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+main aside .btns .time-info i {
+  margin-right: 10px;
+}
+
+main aside .btns button:first-child {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+main aside .btns button {
+  width: 49%;
+  height: 40px;
+  color: #fff;
+  font-size: 10px;
+  border-radius: 2px;
+  transition: background-color .2s;
+  text-transform: uppercase;
+}
+
+main aside .btns button:nth-child(1) {
+  background-color: #a94865;
+}
+
+main aside .btns .sellVeh {
+  background-color: rgba(255, 125, 125, 0.9);
+}
+
+main aside .btns .buyVeh {
+  background: rgb(127, 38, 193);
+}
+
+main aside .btns .cancelBtn {
+  margin-left: 5px;
+  background-color: rgba(255, 125, 125, 0.9);
+}
+
+main footer {
+  position: absolute;
+  bottom: 12px;
+  width: 100%;
+  color: #fff;
+  font-size: 8px;
+  display: flex;
+  padding: 0 25px;
+  letter-spacing: 1px;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: space-between;
+}
+
+main footer .pages {
+  display: flex;
+  align-items: center;
+}
+
+main footer .pages .number {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  font-size: 10px;
+  font-weight: bold;
+  margin: 0 10px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  transition: all .2s;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+main footer .pages .number:hover {
+  background-color: rgb(127, 38, 193);
+}
+
+main footer p {
+  opacity: .5;
+}
+
+main footer .pages .number:last-child {
+  margin-right: 0;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.01);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background: #00000049; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(127, 38, 193);
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+}
+
+input[type=number] { 
+ -moz-appearance: textfield;
+ appearance: textfield;
+}
+
+/*
+=====================================
+  LINES INVENTORY
+=====================================
+*/
+
+.lineLT {
+  position: absolute;
+  top:  -5px;
+  left: -5px;
+}
+
+.lineLB {
+  position: absolute;
+  bottom:  -5px;
+  left: -5px;
+  transform: rotate(-90deg);
+}
+
+.lineRT {
+  position: absolute;
+  top:  -5px;
+  right: -5px;
+  transform: scaleX(-1);
+}
+
+.lineRB {
+  position: absolute;
+  bottom:  -5px;
+  right: -5px;
+  transform: rotate(90deg) scaleX(-1);
+}

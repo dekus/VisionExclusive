@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/app.css">
+</head>
+
+<body style="display: none;">
+  <main>
+    <img class="lineLT" src="line.svg">
+    <img class="lineLB" src="line.svg">
+    <img class="lineRT" src="line.svg">
+    <img class="lineRB" src="line.svg">
+    <header>
+      <div class="welcome">
+        <div class="user-icon">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="user-info">
+          <span>Hey <b>Benvenuto</b>,<br> <span id="name">javao bueno</span></span>
+          <small>Contanti: €<small id="bank-value"> 580,00</small></small>
+        </div>
+      </div>
+      <div class="column-item" onclick="openCategorys()">
+        <i class="fa-solid fa-car-mirrors"></i>
+        <p>
+          <small>categoria</small>
+          <span id="categoryName">Macchine</span>
+        </p>
+        <div class="options" style="display: none;">
+          <div class="option" onclick="app.changeCategory('macchine')">Macchine</div>
+          <div class="option" onclick="app.changeCategory('motos')">Moto</div>
+          <div class="option" onclick="app.changeCategory('vip')">Vip</div>
+        <!--   <div class="option" onclick="app.changeCategory('van')">vans</div> -->
+        </div>
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+      <!-- <div class="column-item" onclick="app.sellCars()"> -->
+<!--         <i class="fa-solid fa-garage-car"></i>
+        <p>
+          <small>seus veiculos</small>
+          <span>garagem</span>
+        </p> -->
+     <!--  </div> -->
+      <div class="column-item">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input id="search" type="text" placeholder="Cercare">
+      </div>
+    </header>
+    <aside style="display: none;">
+      <div class="banner">
+        <span id="name-car">lamborguini</span>
+        <small id="category-name">urso polar</small>
+        <img id="overlay" class="img-car" src="https://media.discordapp.net/attachments/536772140721111049/951253455035596800/675ltsp.png?width=1193&height=671">
+        <img id="car" class="img-car" src="https://media.discordapp.net/attachments/536772140721111049/951253455035596800/675ltsp.png?width=1193&height=671">
+      </div>
+      <div class="row-info">
+        <span>Prezzo</span>
+        <b id="price-car">0</b>
+      </div>
+      <div class="row-info">
+        <span>Disponibili</span>
+        <b id="qtd-car">0</b>
+      </div>
+      <div class="row-info">
+        <span>Bagaglio</span>
+        <b id="portamalaCar">0</b>
+      </div>
+      <p>Il cliente è molto importante, il cliente sarà seguito dal cliente. Ora gli ultrici stanno aspettando gli ultrici. </p>
+      <div class="btns">
+        <button class="testDrive" onclick="app.testDrive(this)">Test-Drive</button>
+        <button class="sellVeh" onclick="app.sellVehicle(this)" style="display: none;">Vendere</button>
+        <button class="buyVeh" onclick="app.buyVehicle()">Comprare</button>
+        <button class="cancelBtn" onclick="app.cancelBuy()">Cancellare</button>
+      </div>
+    </aside>
+    <section class="content-vehicles"></section>
+
+    <footer>
+      <p>per passare alle pagine successive spostare le pagine a lato</p>
+      <div class="pages">
+        <div id="prev" class="number"><i class="fa-solid fa-chevron-left"></i></div>
+        <small id="currentPage">0 de 0</small>
+        <div id="next" class="number"><i class="fa-solid fa-chevron-right"></i></div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
