@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,700;0,800;1,700&family=Roboto:wght@100;400;700;900&family=Rubik:ital,wght@0,400;0,500;0,700;0,800;0,900;1,800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: "Roboto";
+}
+
+body {
+  height: 100vh;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 740px;
+  height: 437px;
+
+  background: rgba(22, 22, 22, 0.98);
+  border-radius: 10px;
+}
+
+main .topContent {
+  display: flex;
+  margin: 0px 24px;
+
+  margin-top: 25px;
+}
+
+main .topContent .title {
+  width: 447px;
+  height: 38px;
+  left: 864px;
+  top: 346px;
+
+  background: rgba(25, 25, 25, 0.98);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: flex-start;
+
+  margin-left: 22px;
+}
+
+main .topContent .title p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  margin-left: 22px;
+  margin-top: 10px;
+
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+main .topContent input {
+  width: 222px;
+  height: 38px;
+  left: 620px;
+  top: 346px;
+
+  background: rgba(25, 25, 25, 0.98);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+
+  outline: none;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+
+  padding-left: 12px;
+
+  /* identical to box height */
+
+  color: #9e9b9b;
+}
+
+main .leftBar {
+  width: 230px;
+  height: 339px;
+  left: 618px;
+
+  overflow-y: auto;
+
+  margin-top: 10px;
+  margin-left: 23px;
+}
+
+.leftBar::-webkit-scrollbar {
+  width: 3px;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 3px;
+}
+.leftBar::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #7f26c1 0%, #8a0ce8 100%);
+  border-radius: 4px;
+  padding-right: 12px;
+}
+
+main .itemContent {
+  display: flex;
+  width: 204px;
+  height: 72px;
+  left: 620px;
+  top: 397px;
+
+  margin-top: 15px;
+
+  background: rgba(25, 25, 25, 0.98);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+main .itemContent:hover {
+  transition: all 0.3s;
+  background: rgba(59, 58, 58, 0.98);
+}
+
+main .itemContent .boxImg {
+  width: 55px;
+  height: 55px;
+  left: 630px;
+  top: 406px;
+
+  margin-top: 7px;
+  margin-left: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(22, 22, 22, 0.98);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 2px;
+}
+
+main .itemContent .boxImg img {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+main .itemContent .textBox p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  /* identical to box height */
+  margin-top: 16px;
+
+  margin-left: 14px;
+
+  color: #6c6c6c;
+}
+
+main .itemContent .textBox h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+
+  margin-left: 14px;
+  margin-top: 1px;
+
+  color: #ffffff;
+}
+
+main .centerBar {
+  margin-left: 22px;
+  margin-top: 15px;
+}
+
+main .centerBar .centerImg {
+  width: 150px;
+  height: 146px;
+  left: 864px;
+  top: 399px;
+
+  background: rgba(25, 25, 25, 0.98);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .content {
+  display: flex;
+}
+
+main .weaponInfos {
+  display: flex;
+}
+
+main .textIncluse {
+  margin-top: 8px;
+}
+
+main .textIncluse p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+  color: #b1b1b1;
+}
+
+main .textIncluse h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  margin-top: 2px;
+
+  color: #ffffff;
+}
+
+main .textBox {
+  margin-left: 16px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+main .makings {
+  width: 447px;
+  height: 38px;
+  left: 864px;
+  top: 553px;
+
+  margin-top: 8px;
+
+  background: rgba(25, 25, 25, 0.98);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+
+  padding-top: 7px;
+  padding-left: 15px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+main .boxMakings {
+  width: 50px;
+  height: 50px;
+  left: 864px;
+  top: 600px;
+
+  background: rgba(25, 25, 25, 0.98);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 2px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 9px;
+  margin-right: 5px;
+}
+
+main .boxMakings img {
+  width: 39px;
+  height: 39px;
+}
+
+main .MakingBoxs {
+  display: flex;
+}
+
+main button {
+  width: 446px;
+  height: 39px;
+  left: 864px;
+  top: 694px;
+
+  background: #8a0ce8;
+  border: none;
+  border-radius: 4px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  transition: all 0.3s;
+  margin-top: 44px;
+
+  color: #ffffff;
+}
+
+main button:hover {
+  transition: all 0.3s;
+  background: #7f26c1;
+  cursor:pointer;
+}

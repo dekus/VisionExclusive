@@ -1,0 +1,57 @@
+[
+    {
+        "HWID": "3:14bf8d219e4b42ceb5ae201b80e8ed564fb76ee9fff9d8d1bc686f9c83b262e6",
+        "STEAM": "steam:110000154aca03f",
+        "LIVE": "N/A",
+        "REASON": "Anti Black List Weapon",
+        "IP": "93.146.169.199",
+        "BANID": "#6731",
+        "LICENSE": "license2:85d0c94d819abdd72115426ce3bd03ba5bd2be6d",
+        "DISCORD": "664593035618680863",
+        "XBL": "N/A"
+    },
+    {
+        "HWID": "3:536066ac0d8743afa4d0088a36bab49f9eac63fa463f4e66c918b1262e706f73",
+        "STEAM": "steam:11000014c828e79",
+        "LIVE": "live:914799434803383",
+        "REASON": "Anti Superjump",
+        "IP": "90.75.183.76",
+        "BANID": "#2911",
+        "LICENSE": "license2:a99705cca9fd1f03c9a13d0fb88d93a388324dde",
+        "DISCORD": "1043202379333505135",
+        "XBL": "xbl:2535413372027294"
+    },
+    {
+        "HWID": "3:7ea8f81238af911995cfe7eb0a4961e82649e8a06488f385b70d8bc57512e313",
+        "STEAM": "steam:1100001443ab649",
+        "LIVE": "live:914798745204387",
+        "REASON": "Anti Black List Weapon",
+        "IP": "37.159.120.69",
+        "BANID": "#7458",
+        "LICENSE": "license2:4e70b3219951bd74fc98ff408e5b535d026739a4",
+        "DISCORD": "777812986441105408",
+        "XBL": "xbl:2535428159895636"
+    },
+    {
+        "HWID": "3:abcd0132ce3fb6d42e121385ad6f7c498cda1b42ee886d5686f0a7cc45c8fd52",
+        "STEAM": "steam:11000015105ffcf",
+        "LIVE": "live:1055519388096671",
+        "REASON": "Anti Spam Explosion",
+        "IP": "176.62.155.96",
+        "BANID": "#9689",
+        "LICENSE": "license2:69001ef050c964f022497d2a6d4446bdeeb023ec",
+        "DISCORD": "1038779975190446190",
+        "XBL": "xbl:2535414641110223"
+    },
+    {
+        "HWID": "3:b5b213ea7ccd61b2d37db58f65c4f0e694c13167980c968602eff6a8448f5d2f",
+        "STEAM": "steam:11000015aa1e12f",
+        "LIVE": "N/A",
+        "REASON": "Anti Explosion",
+        "IP": "31.164.52.92",
+        "BANID": "#4974",
+        "LICENSE": "license2:2f1122b462382bc38fa6a004202953ae52b43483",
+        "DISCORD": "1006273164856270928",
+        "XBL": "N/A"
+    }
+]
