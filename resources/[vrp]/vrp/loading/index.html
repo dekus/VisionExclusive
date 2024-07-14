@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>	
+	    <title>LoadingScreen-ItalianFreeroam</title>
+	    <link href="style.css" rel="stylesheet" type="text/css" />	
+		</head>
+		<video autoplay loop id="myVideo">
+			<source src="https://cdn.discordapp.com/attachments/951948729143947264/1132021211749175316/Loadscreen1.mp4" type="video/mp4">
+		</video>
+		<audio id="diobestia" src="music.mp3" autoplay="true" hidden="true" loop="true"></audio>
+
+	</body>
+
+	<script>
+
+	var play = false;
+	var myAudio = document.getElementById("diobestia");
+
+	myAudio.volume = 0.5;
+
+	function onKeyDown(event) {
+			switch (event.keyCode) {
+				case 32:               
+					if (play) {
+						myAudio.pause();
+						play = false;
+					} else {
+						myAudio.play();
+						play = true;
+					}
+					break;
+			}
+		return false;
+	}
+
+	window.addEventListener("keydown", onKeyDown, false);
+
+	</script>
+</html>

@@ -1,0 +1,8 @@
+Citizen.CreateThread(function()
+  RequestIpl("rc12b_default")
+  RemoveIpl("rc12b_default")
+  RequestIpl("rc12b_destroyed")
+  RemoveIpl("rc12b_destroyed")
+  RemoveIpl("hei_sm_16_interior_v_bahama_milo_")
+  RequestIpl("rc12b_hospitalinterior")
+end)
