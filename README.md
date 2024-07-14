@@ -26,7 +26,6 @@ This server is optimized for PvP (Player vs. Player) gameplay and includes a var
 
 To get started with your own FiveM Academy Server, follow these steps:
 
-    ```
 1. **Configure the Server**: Modify the configuration files to suit your needs.
 
 ## Contributions
